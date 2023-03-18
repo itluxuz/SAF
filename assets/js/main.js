@@ -149,3 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+
+
+let inputid = document.getElementById("input-id").value;
