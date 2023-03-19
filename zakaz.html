@@ -20,15 +20,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
 
-  <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("q4CdGBE8zI_F5G4f_");
-      })();
-    </script> 
     
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -116,13 +107,47 @@
         <h3 class="col-12 " style="padding-bottom: 10px;">ОТСЛЕДИТЬ ЗАКАЗ</h3>
         <div class="d-flex" style="width: 100%; ">
         <input type="text" id="input-id" class="form-control col-12" style="width: 50%;  height: 50px; " placeholder="Введите TRACK ID"   >
-        <button style=" margin-left: -10px; background-color: #ED4248; color: #fff;" class="btn ">Search</button>
+        <button  style=" margin-left: -10px; background-color: #ED4248; color: #fff;" class="btn " onclick="search()" >Search</button>
         </div>
 
       </div>
       
-      <div class="input-zakaz-div row" style=" margin-top: 20px; box-shadow: 0 0 10px 1px #7b7b7b ; border-radius: 10px;  justify-content: center ; align-items: center ; padding: 10px; "   > 
-        <h3 class="col-12 " style="padding-bottom: 10px;"  > TRACK ID <span id="trackid"></span> </h3>
+      <div class="input-zakaz-div " style=" margin-top: 10px; box-shadow: 0 0 10px 1px #7b7b7b ; border-radius: 10px;  justify-content: center ; align-items: center ; text-align: center; padding: 10px; "   > 
+        <h3 class="col-12 " style="padding-bottom: 10px;"  > TRACK ID :<span id="trackid"></span> </h3>
+
+        <div class="d-flex flex-wrap" style="width: 50%; text-align: center;  height: auto; margin: 0 auto  ; " > 
+          <p style=" width: 25%; justify-content: start; align-items: center;  ">02.12.2023; 12:50 </p>
+          <div style="background-color:#ED4248; width: 1%; height: auto; border-radius: 5px; margin: 0 auto; "></div>
+          <p style="width: 73%; margin-bottom: 10px; display: flex; flex-wrap: wrap; text-align: left; justify-content: start;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ratione amet possimus cumque ad, labore alias blanditiis, impedit obcaecati laudantium molestiae. Beatae quisquam consectetur a natus esse, blanditiis exercitationem facere?</p>  
+      </div>
+
+      <div class="d-flex flex-wrap" style="width: 50%; text-align: center;  height: auto; margin: 0 auto  ; " > 
+          <p style=" width: 25%; justify-content: start; align-items: center;  ">02.12.2023; 12:50 </p>
+          <div style="background-color:#ED4248; width: 1%; height: auto; border-radius: 5px; margin: -10px auto; "></div>
+          <p style="width: 73%; margin-bottom: 10px; display: flex; flex-wrap: wrap; text-align: left; justify-content: start;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ratione amet possimus cumque ad, labore alias blanditiis, impedit obcaecati laudantium molestiae. Beatae quisquam consectetur a natus esse, blanditiis exercitationem facere?</p>  
+      </div>
+
+      <div class="d-flex flex-wrap" style="width: 50%; text-align: center;  height: auto; margin: 0 auto  ; " > 
+          <p style=" width: 25%; justify-content: start; align-items: center;   ">02.12.2023; 12:50 </p>
+          <div style="background-color:#ED4248; width: 1%; height: auto; border-radius: 5px; margin: 0 auto; "></div>
+          <p style="width: 73%; margin-bottom: 10px; display: flex; flex-wrap: wrap; text-align: left; justify-content: start;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ratione amet possimus cumque ad, labore alias blanditiis, impedit obcaecati laudantium molestiae. Beatae quisquam consectetur a natus esse, blanditiis exercitationem facere?</p>  
+      </div>
+
+      <div class="d-flex flex-wrap" style="width: 50%; text-align: center;  height: auto; margin: -10px auto  ; " > 
+          <p style=" width: 25%; justify-content: start; align-items: center;  ">02.12.2023; 12:50 </p>
+          <div style="background-color:#ED4248; width: 1%; height: auto; border-radius: 5px; margin: -10px auto; "></div>
+          <p style="width: 73%; margin-bottom: 10px; display: flex; flex-wrap: wrap; text-align: left; justify-content: start;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ratione amet possimus cumque ad, labore alias blanditiis, impedit obcaecati laudantium molestiae. Beatae quisquam consectetur a natus esse, blanditiis exercitationem facere?</p>  
+      </div>
+
+      <div class="d-flex flex-wrap" style="width: 50%; text-align: center;  height: auto; margin: 0 auto  ; " > 
+          <p style=" width: 25%; justify-content: start; align-items: center;   ">02.12.2023; 12:50 </p>
+          <div style="background-color:#ED4248; width: 1%; height: auto; border-radius: 5px; margin: 10px auto; "></div>
+          <p style="width: 73%; margin-bottom: 10px; display: flex; flex-wrap: wrap; text-align: left; justify-content: start;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ratione amet possimus cumque ad, labore alias blanditiis, impedit obcaecati laudantium molestiae. Beatae quisquam consectetur a natus esse, blanditiis exercitationem facere?</p>  
+      </div>
+
+      
+
+      
       
 
       </div>
